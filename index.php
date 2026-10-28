@@ -47,7 +47,6 @@ $totalMenu = count($menu);
         </div>
 
         <div class="hero-illustration" aria-hidden="true">
-            🍛
         </div>
     </section>
 
@@ -64,16 +63,16 @@ $totalMenu = count($menu);
 
     <section class="info-grid">
         <article class="info-card">
-            <span class="info-icon" aria-hidden="true">🍽️</span>
+            <span class="info-icon" aria-hidden="true"></span>
             <h3>Pilihan Menu</h3>
             <p>
-                Tersedia <?= e((string) $totalMenu; ?> pilihan makanan,
+                Tersedia <?= $totalMenu; ?> pilihan makanan,
                 camilan, dan minuman.
             </p>
         </article>
 
         <article class="info-card">
-            <span class="info-icon" aria-hidden="true">🕒</span>
+            <span class="info-icon" aria-hidden="true"></span>
             <h3>Jam Operasional</h3>
             <p>Senin–Sabtu, pukul 08.00–17.00 WIB.</p>
         </article>
