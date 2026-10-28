@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f8f5ef;
+    color: #35271f;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    transition: 0.2s;
+}
+
+/* NAVIGASI */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #eadfd3;
+    padding: 18px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand {
+    color: #75452f;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #65564b;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: #a65d35;
+    font-weight: bold;
+}
+
+/* BERANDA */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: #f0e2d1;
+    border-radius: 20px;
+    padding: 45px;
+    margin: 35px 0;
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.eyebrow {
+    color: #a65d35;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1,
+.menu-hero h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.hero p,
+.menu-hero p {
+    color: #806f62;
+}
+
+.hero-illustration {
+    font-size: 100px;
+    background: #fffaf4;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    background: #75452f;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #5b3423;
+}
+
+/* INFORMASI BERANDA */
+.info-section {
+    margin: 40px 0 25px;
+}
+
+.info-section p {
+    max-width: 800px;
+    color: #806f62;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.info-card {
+    background: white;
+    padding: 22px;
+    border: 1px solid #eee4d8;
+    border-radius: 14px;
+}
+
+.info-icon {
+    font-size: 28px;
+}
+
+.info-card h3 {
+    margin: 8px 0;
+}
+
+.info-card p {
+    color: #806f62;
+    margin-bottom: 0;
+}
+
+.cta {
+    text-align: center;
+    background: white;
+    border: 1px solid #eee4d8;
+    border-radius: 16px;
+    padding: 30px 15px;
+    margin-bottom: 40px;
+}
+
+.cta p {
+    color: #806f62;
+}
+
+/* BAGIAN PEMBUKA KATALOG */
+.menu-hero {
+    text-align: center;
+    padding: 40px 15px 25px;
+}
+
+.menu-hero p {
+    margin-bottom: 8px;
+}
+
+/* RINGKASAN MENU */
+.ringkasan {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin: 20px 0 40px;
+}
+
+.summary-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee4d8;
+}
+
+.summary-item span {
+    display: block;
+    color: #806f62;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.summary-item strong {
+    color: #75452f;
+    font-size: 23px;
+}
+
+/* DAFTAR MENU */
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: #806f62;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 45px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: white;
+    padding: 18px;
+    border: 1px solid #eee4d8;
+    border-radius: 14px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #75452f12;
+}
+
+.menu-icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7eadb;
+    border-radius: 12px;
+    font-size: 27px;
+}
+
+.menu-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.kategori {
+    color: #a65d35;
+    font-size: 12px;
+}
+
+.menu-info h3 {
+    margin: 7px 0;
+    font-size: 17px;
+}
+
+.keterangan {
+    color: #806f62;
+    font-size: 13px;
+    margin: 8px 0 14px;
+}
+
+.menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.harga {
+    color: #75452f;
+    font-size: 15px;
+}
+
+.status {
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.tersedia {
+    background: #e5f4e7;
+    color: #28733b;
+}
+
+.habis {
+    background: #fbe7e4;
+    color: #b33d32;
+}
+
+/* FOOTER */
+.footer {
+    background: #75452f;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* TAMPILAN TABLET DAN HP */
+@media (max-width: 800px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero-illustration {
+        width: 120px;
+        height: 120px;
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 92%;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .menu-grid,
+    .ringkasan,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
+
+    .hero-illustration {
+        align-self: center;
+    }
+
+    .menu-card {
+        padding: 15px;
+    }
+}
