@@ -1,55 +1,39 @@
 <?php
 declare(strict_types=1);
 
+/**
+ * Mengamankan teks sebelum ditampilkan ke halaman HTML.
+ */
 function e(string $teks): string
 {
     return htmlspecialchars(
         $teks,
-        ENT_QUOTES | ENT_SUBSTITUTE,
+        ENT_QUOTES,
         'UTF-8'
     );
 }
 
-function formatRupiah(int $angka): string
+/**
+ * Mengubah angka harga menjadi format Rupiah.
+ */
+function formatRupiah(int $harga): string
 {
-    return 'Rp ' . number_format($angka, 0, ',', '.');
+    return 'Rp' . number_format(
+        $harga,
+        0,
+        ',',
+        '.'
+    );
 }
 
-function statusMenu(bool $tersedia): string
+/**
+ * Mengubah status menu menjadi keterangan yang mudah dibaca.
+ */
+function keteranganPedas(bool $pedas): string
 {
-    if ($tersedia) {
-        return 'Tersedia';
+    if ($pedas) {
+        return 'Pedas';
     }
 
-    return 'Habis';
-}
-
-function hitungMenuTersedia(array $menu): int
-{
-    $hasil = array_filter(
-        $menu,
-        fn(array $item): bool => $item['tersedia']
-    );
-
-    return count($hasil);
-}
-
-function cariHargaTermurah(array $menu): int
-{
-    $daftarHarga = array_column($menu, 'harga');
-
-    return min($daftarHarga);
-}
-
-function hitungJumlahKategori(
-    array $menu,
-    string $kategori
-): int {
-    $hasil = array_filter(
-        $menu,
-        fn(array $item): bool =>
-            $item['kategori'] === $kategori
-    );
-
-    return count($hasil);
+    return 'Tidak Pedas';
 }

@@ -1,93 +1,91 @@
 <?php
 declare(strict_types=1);
-
-require_once 'data.php';
-require_once 'functions.php';
-
-$totalMenu = count($menu);
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda | Kantin Kita</title>
+    <title>Kantin Kita | Beranda</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <h1>Kantin Kita</h1>
+            <p>Tempat makan nyaman dengan menu lezat dan harga bersahabat.</p>
+        </div>
+    </header>
 
-<header class="navbar">
-    <div class="container nav-content">
-        <a href="index.php" class="brand">Kantin Kita</a>
-
-        <nav>
+    <nav class="navbar">
+        <div class="container">
             <a href="index.php" class="active">Beranda</a>
-            <a href="katalog.php">Menu</a>
-        </nav>
-    </div>
-</header>
+            <a href="katalog.php">Katalog Menu</a>
+        </div>
+    </nav>
 
-<main class="container">
-    <section class="hero">
-        <div class="hero-text">
-            <p class="eyebrow">SELAMAT DATANG</p>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">SELAMAT DATANG DI KANTIN KITA</p>
+                <h2>Makan Enak, Harga Bersahabat!</h2>
+                <p>
+                    Kantin Kita menyediakan berbagai pilihan makanan,
+                    camilan, dan minuman yang cocok dinikmati kapan saja.
+                    Kami hadir untuk menemani waktu makanmu dengan menu
+                    yang beragam dan harga yang ramah di kantong.
+                </p>
+                <a href="katalog.php" class="button">
+                    Lihat Menu Kami
+                </a>
+            </div>
+        </section>
 
-            <h1>Menu Enak, Harga Bersahabat!</h1>
-
+        <section class="about">
+            <h2>Tentang Kantin Kita</h2>
             <p>
-                Kantin Kita menyediakan berbagai pilihan
-                makanan, camilan, dan minuman untuk menemani
-                aktivitasmu setiap hari.
+                Kantin Kita merupakan kantin umum yang menyediakan
+                berbagai pilihan makanan dan minuman untuk memenuhi
+                kebutuhan makan sehari-hari. Kami ingin memberikan
+                pengalaman makan yang praktis, nyaman, dan terjangkau.
             </p>
+        </section>
 
-            <a href="katalog.php" class="btn">
-                Lihat Menu
+        <section class="info-section">
+            <h2>Informasi Kantin</h2>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Jam Operasional</h3>
+                    <p>Setiap hari</p>
+                    <p>08.00–16.00 WIB</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Pilihan Menu</h3>
+                    <p>Makanan, camilan, dan minuman</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Harga Bersahabat</h3>
+                    <p>Beragam pilihan sesuai kebutuhanmu.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Temukan Menu Favoritmu!</h2>
+            <p>Lihat berbagai pilihan menu yang tersedia di Kantin Kita.</p>
+            <a href="katalog.php" class="button">
+                Jelajahi Menu
             </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kantin Kita. Semua hak dilindungi.</p>
         </div>
-
-        <div class="hero-illustration" aria-hidden="true">
-        </div>
-    </section>
-
-    <section class="info-section">
-        <h2>Tentang Kantin Kita</h2>
-
-        <p>
-            Kantin Kita merupakan kantin sederhana yang
-            menawarkan pilihan menu dengan harga terjangkau.
-            Website ini membantu pengunjung melihat daftar
-            menu dan mengetahui ketersediaannya.
-        </p>
-    </section>
-
-    <section class="info-grid">
-        <article class="info-card">
-            <span class="info-icon" aria-hidden="true"></span>
-            <h3>Pilihan Menu</h3>
-            <p>
-                Tersedia <?= $totalMenu; ?> pilihan makanan,
-                camilan, dan minuman.
-            </p>
-        </article>
-
-        <article class="info-card">
-            <span class="info-icon" aria-hidden="true"></span>
-            <h3>Jam Operasional</h3>
-            <p>Senin–Sabtu, pukul 08.00–17.00 WIB.</p>
-        </article>
-    </section>
-
-    <section class="cta">
-        <h2>Mau melihat daftar menu?</h2>
-        <p>Cek pilihan menu dan harga yang tersedia.</p>
-        <a href="katalog.php" class="btn">Buka Katalog</a>
-    </section>
-</main>
-
-<footer class="footer">
-    <p>&copy; 2026 Kantin Kita. Selamat menikmati!</p>
-</footer>
-
+    </footer>
 </body>
 </html>

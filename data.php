@@ -8,62 +8,62 @@ $menu = [
         'kategori' => 'Makanan',
         'harga' => 15000,
         'pedas' => true,
-        'tersedia' => true
+        'status' => 'Tersedia'
     ],
     [
         'id' => 2,
-        'nama' => 'Mie Goreng',
+        'nama' => 'Ayam Geprek',
         'kategori' => 'Makanan',
-        'harga' => 12000,
+        'harga' => 17000,
         'pedas' => true,
-        'tersedia' => true
+        'status' => 'Tersedia'
     ],
     [
         'id' => 3,
-        'nama' => 'Ayam Geprek',
+        'nama' => 'Mie Goreng',
         'kategori' => 'Makanan',
-        'harga' => 18000,
+        'harga' => 13000,
         'pedas' => true,
-        'tersedia' => true
+        'status' => 'Tersedia'
     ],
     [
         'id' => 4,
-        'nama' => 'Nasi Ayam',
+        'nama' => 'Nasi Ayam Bakar',
         'kategori' => 'Makanan',
-        'harga' => 16000,
+        'harga' => 18000,
         'pedas' => false,
-        'tersedia' => true
+        'status' => 'Tersedia'
     ],
     [
         'id' => 5,
         'nama' => 'Kentang Goreng',
-        'kategori' => 'Snack',
+        'kategori' => 'Camilan',
         'harga' => 10000,
         'pedas' => false,
-        'tersedia' => true
+        'status' => 'Tersedia'
     ],
     [
         'id' => 6,
+        'nama' => 'Roti Bakar',
+        'kategori' => 'Camilan',
+        'harga' => 12000,
+        'pedas' => false,
+        'status' => 'Habis'
+    ],
+    [
+        'id' => 7,
         'nama' => 'Es Teh',
         'kategori' => 'Minuman',
         'harga' => 4000,
         'pedas' => false,
-        'tersedia' => true
-    ],
-    [
-        'id' => 7,
-        'nama' => 'Kopi Susu',
-        'kategori' => 'Minuman',
-        'harga' => 10000,
-        'pedas' => false,
-        'tersedia' => false
+        'status' => 'Tersedia'
     ],
     [
         'id' => 8,
-        'nama' => 'Jus Alpukat',
+        'nama' => 'Es Jeruk',
         'kategori' => 'Minuman',
-        'harga' => 12000,
+        'harga' => 6000,
         'pedas' => false,
-        'tersedia' => true
+        'status' => 'Tersedia'
     ],
 ];
