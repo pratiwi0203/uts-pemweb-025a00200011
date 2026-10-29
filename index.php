@@ -20,26 +20,37 @@ declare(strict_types=1);
     <nav class="navbar">
         <div class="container">
             <a href="index.php" class="active">Beranda</a>
-            <a href="katalog.php">Katalog Menu</a>
+            <a href="katalog.php">Jelajahi Menu</a>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="hero">
-            <div class="hero-content">
-                <p class="eyebrow">SELAMAT DATANG DI KANTIN KITA</p>
-                <h2>Makan Enak, Harga Bersahabat!</h2>
-                <p>
-                    Kantin Kita menyediakan berbagai pilihan makanan,
-                    camilan, dan minuman yang cocok dinikmati kapan saja.
-                    Kami hadir untuk menemani waktu makanmu dengan menu
-                    yang beragam dan harga yang ramah di kantong.
-                </p>
-                <a href="katalog.php" class="button">
-                    Lihat Menu Kami
-                </a>
-            </div>
-        </section>
+
+<section class="hero">
+    <div class="hero-layout">
+
+        <div class="hero-content">
+            <p class="eyebrow">SELAMAT DATANG DI KANTIN KITA</p>
+            <h2>Makan Enak, Harga Bersahabat!</h2>
+
+            <p>
+                Kantin Kita menyediakan berbagai pilihan makanan,
+                camilan, dan minuman yang cocok dinikmati kapan saja.
+                Kami hadir untuk menemani waktu makanmu dengan menu
+                yang beragam dan harga yang ramah di kantong.
+            </p>
+
+            <a href="katalog.php" class="button">
+                Lihat Menu Kami
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/kantin.jpeg" alt="Suasana Kantin Kita">
+        </div>
+
+    </div>
+</section>
+
 
         <section class="about">
             <h2>Tentang Kantin Kita</h2>
