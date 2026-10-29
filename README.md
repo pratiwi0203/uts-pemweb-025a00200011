@@ -16,8 +16,8 @@ Kantin Kita merupakan website sederhana yang menampilkan informasi kantin dan ka
 ## 3. Cara Menjalankan di Localhost
 
 1. Pastikan aplikasi Laragon sudah terpasang.
-2. Salin folder proyek `uts-pemweb-kantin` ke dalam folder `htdocs`, biasanya berada di `C:\xampp\htdocs`.
-3. Buka XAMPP Control Panel, kemudian jalankan Apache.
+2. Salin folder proyek `uts-pemweb-kantin` ke dalam folder `www`, biasanya berada di `C:\xampp\htdocs`.
+3. Buka Laragon, kemudian jalankan Apache.
 4. Buka browser dan akses alamat berikut:
 
    `http://localhost/uts-pemweb-kantin/index.php`
@@ -30,17 +30,15 @@ Kantin Kita merupakan website sederhana yang menampilkan informasi kantin dan ka
 | Fitur | File | Fungsi atau Kode |
 |---|---|---|
 | Menampilkan halaman beranda | `index.php` | Menampilkan informasi Kantin Kita dan tautan katalog |
-| Menampilkan daftar menu | `katalog.php` | `foreach` untuk menampilkan data menu |
-| Menampilkan kategori menu | `katalog.php` | Percabangan `if` dan `elseif` |
-| Menampilkan status ketersediaan | `katalog.php`, `functions.php` | `statusMenu()` dan `if` |
+| Menampilkan daftar menu | `katalog.php` | `foreach` untuk menampilkan data menu dari array $menu |
+| Menampilkan dan memfilter kategori menu | `katalog.php` | `if` dan `array_filter()` untuk menyaring menu berdasarkan kategori |
+| Menampilkan status ketersediaan | `katalog.php`, `functions.php` |Percabangan `if` dan `else` untuk membedakan status tersedia dan habis |
 | Mengubah harga ke format Rupiah | `functions.php` | `formatRupiah()` |
-| Menghitung total menu | `katalog.php` | `count()` |
-| Menghitung menu yang tersedia | `functions.php` | `hitungMenuTersedia()` |
-| Menampilkan harga termurah | `functions.php` | `cariHargaTermurah()` |
-| Menghitung menu berdasarkan kategori | `functions.php` | `hitungJumlahKategori()` |
+| Menghitung total menu | `katalog.php` | `count($menu)` |
+| Menampilkan harga termurah | `katalog.php` | `array_column() dan min()` |
 | Menyimpan data menu | `data.php` | Array multidimensi `$menu` |
 | Mengamankan teks sebelum ditampilkan | `functions.php` | `e()` dengan `htmlspecialchars()` |
-| Mengatur tampilan website | `style.css` | CSS dan media query responsif |
+| Mengatur tampilan website | `style.css` | CSS dan media query responsif di laptop, tablet, dan HP |
 
 ## 5. Fungsi Array Bawaan yang Digunakan
 
