@@ -20,11 +20,11 @@ declare(strict_types=1);
     <nav class="navbar">
         <div class="container">
             <a href="index.php" class="active">Beranda</a>
-            <a href="katalog.php">Jelajahi Menu</a>
+            <a href="katalog.php">Katalog Menu</a>
         </div>
     </nav>
 
-
+<div class="container">
 <section class="hero">
     <div class="hero-layout">
 
@@ -92,11 +92,13 @@ declare(strict_types=1);
             </a>
         </section>
     </main>
+</div>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Kantin Kita. Semua hak dilindungi.</p>
         </div>
     </footer>
+
 </body>
 </html>
