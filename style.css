@@ -83,7 +83,7 @@ body {
 /* Menyesuaikan tampilan beranda di laptop */
 @media (min-width: 769px) {
     main.container {
-        max-width:1000px;
+        max-width: 1000px;
         width: 65%;
         margin: 0 auto;
     }
