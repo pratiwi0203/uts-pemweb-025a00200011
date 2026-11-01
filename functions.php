@@ -1,9 +1,7 @@
 <?php
 declare(strict_types=1);
 
-/**
- * Mengamankan teks sebelum ditampilkan ke halaman HTML.
- */
+/*Mengamankan teks sebelum ditampilkan ke halaman HTML.*/
 function e(string $teks): string
 {
     return htmlspecialchars(
@@ -13,9 +11,7 @@ function e(string $teks): string
     );
 }
 
-/**
- * Mengubah angka harga menjadi format Rupiah.
- */
+/*Mengubah angka harga menjadi format Rupiah.*/
 function formatRupiah(int $harga): string
 {
     return 'Rp' . number_format(
@@ -26,9 +22,7 @@ function formatRupiah(int $harga): string
     );
 }
 
-/**
- * Mengubah status menu menjadi keterangan yang mudah dibaca.
- */
+/*Mengubah status menu menjadi keterangan yang mudah dibaca.*/
 function keteranganPedas(bool $pedas): string
 {
     if ($pedas) {
